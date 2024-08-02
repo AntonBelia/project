@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# Full-Stack Project Portfolio: React, Node.js, Express, and SQL
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Description
 
-## Available Scripts
+This project is a full-stack application that combines both client-side and server-side components. The client-side is implemented using the React library, responsible for rendering the user interface and interacting with it. The server-side is built on Node.js and Express, handling client requests and database interactions. SQL is used as the database technology.
 
-In the project directory, you can run:
+The project is deployed on the Google Cloud Platform (GCP), providing high availability and scalability. Various GCP services are utilized to ensure reliability and security, such as Google App Engine, Google Cloud SQL.
 
-### `npm start`
+The working instance is deployed on [GCP](https://client-dot-belia-staging.uw.r.appspot.com/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Functionality
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This application demonstrates the developer's skills in key aspects of web development:
 
-### `npm test`
+ - Creating and interacting with a database using SQL.
+ - Developing a user interface with React library.
+ - Building the server-side of the application using Node.js and Express.
+ - Testing code using Cypress, and React Testing Library.
+ - Deployment and management of the application on the Google Cloud Platform.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Environment Requirements
 
-### `npm run build`
+Before running the project, ensure the following components are installed:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ - Node.js and npm (for working with packages and dependencies)
+ - SQL database (e.g., MySQL or PostgreSQL)
+ - Code editor for making changes to the project
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Deployment Instructions
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ - 1.Clone this repository to your local machine using the command git clone.
+ - 2.Navigate to the project folder with cd project-name.
+ - 3.Install dependencies for the client-side using npm install.
+ - 4.Build the client-side application using npm run build.
+ - 5.Install dependencies for the server-side using cd server followed by npm install.
+ - 6.Additionally, ensure to set up a database on Google Cloud Platform (GCP) and configure the server-side with your database credentials for full deployment functionality.
+ - 7.Start the server-side by running npm start in the server folder.
+ - 8.Navigate back to the root folder of the project and start the client-side using npm start.
+ - 9.Open a web browser and go to http://localhost:3000 to view the application.
+ - 10.Navigate back to the root folder of the project and deploy the application to Google Cloud Platform (GCP) by executing the command gcloud app deploy client/clientAppEngine.yaml server/serverAppEngine.yaml.
 
-### `npm run eject`
+## Testing
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The project includes built-in tests to ensure its functionality correctness. To run the tests, use the following commands:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ - For running Cypress tests: npx cypress open
+ - For running React Testing Library tests: npm run test
