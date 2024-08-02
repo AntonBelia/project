@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
+// import axios from "axios";
 import { Box, Grid, CircularProgress, colors } from "@mui/material";
 
-import imageFromBuffer from "../../utils/imageFromBuffer.js";
+// import imageFromBuffer from "../../utils/imageFromBuffer.js";
 import PortfolioBlock from "./PortfolioBlock";
 
 import img1 from "../../assets/img/m1.png"
@@ -10,6 +10,7 @@ import img2 from "../../assets/img/m2.png"
 import img3 from "../../assets/img/m3.png"
 import img4 from "../../assets/img/m4.png"
 import img5 from "../../assets/img/m5.png"
+import img6 from "../../assets/img/m6.png"
 
 const projectsFromBuffer = [
   {
@@ -41,6 +42,12 @@ const projectsFromBuffer = [
     demo: "https://antonbelia.github.io/js_2048_game/",
     github: "https://github.com/AntonBelia/js_2048_game/tree/develop",
     name: "PuzzlePulse: Numeric Nexus",
+  },
+  {
+    img: img6,
+    demo: "https://antonbelia.github.io/angular-tolk/",
+    github: "https://github.com/AntonBelia/angular-tolk",
+    name: "Angular-tolk",
   },
 ];
 
