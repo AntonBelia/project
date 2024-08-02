@@ -15,7 +15,7 @@ const bioBullets = [
     text: "based in Uzhgorod",
   },
   {
-    link: "https://github.com/AntonBelia/full-stack_portfolio",
+    link: "https://github.com/AntonBelia/portfolio",
     emoji: "💻",
     text: "code for this project",
   },
